@@ -1,33 +1,31 @@
-body{
-    margin: 0px;
-    background-image: url(graffiti.jpg);
-}
 
-#imgLogo{
-    width: auto;
-    max-width: 140px;
-}
-
-#hdrRegistro{
-    background-color: black;
-    padding-left: 30px;
-}
 
 #colRegistro{
     background-color: white;
 }
 
-#sectionPrincipal{
+
+.rowReg{
+    margin-top: 10px;
+}
+
+#colBtnRegistrar{
     margin-top: 30px;
-    padding-left: 15%;
-    padding-right: 15%;
+    margin-bottom: 30px;
 }
 
-label{
-    font-size: 1.5rem;
-    
+#colBtnRegistrar p{
+    margin-bottom: 0;
 }
 
-h1{
-    font-size: 3rem;
+
+@media screen and (max-width: 400px) {
+    label {
+       font-size: 4vw;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
 }
+

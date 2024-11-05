@@ -1,0 +1,44 @@
+html{
+    overflow-x:hidden;
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    background-image: url(graffiti.jpg);
+}
+
+#imgLogo{
+    width: auto;
+    max-width: 140px;
+}
+
+#hdrRegistro{
+    background-color: black;
+    padding-left: 30px;
+}
+
+
+
+#sectionPrincipal{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+footer{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+
+
+@media screen and (min-height: 700px){
+    footer{
+        height: 100px;
+    }
+}

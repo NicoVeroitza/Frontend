@@ -1,8 +1,7 @@
-
 document.addEventListener("submit", function (evento) {
     evento.preventDefault();
     if(validacionCamposLogin()){
-        document.location.href = "registro.html";
+        document.location.href = "inicio.html";
     }
     
 });
@@ -15,22 +14,23 @@ function validacionCamposLogin(){
     // Regex para comprobar formato de email
     var regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-    // Validación de campo vacío
+    // Validación de campo vacío y formato de email 
     if(campoEmail.value.trim().length == 0){
         campoEmail.style.borderColor = "red";
         campoEmail.style.borderWidth = "5px";
 
         validado = false;
-    }
 
-    // Validación de formato de email 
-    if(!campoEmail.value.match(regexEmail)){
+    }else if(!campoEmail.value.match(regexEmail)){
         campoEmail.style.borderColor = "red";
         campoEmail.style.borderWidth = "5px";
 
         validado = false;
     }
 
+  
+
+    // Validación de contraseña vacía
     if(campoPassword.value.trim().length == 0){
         campoPassword.style.borderColor = "red";
         campoPassword.style.borderWidth = "5px";
@@ -45,6 +45,7 @@ function validacionCamposLogin(){
 
 }
 
+// Limpia los campos marcados por validación
 function resetearValidacion(elemento){
     elemento.style.borderColor = "";
     elemento.style.borderWidth = "2px";
